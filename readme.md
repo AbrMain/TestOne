@@ -49,4 +49,15 @@ TODO:今天暂不介绍安装过程
    touch $.$	#创建新文件 文件名为$.$
    ```
 
-   
+8. 滚回某个版本代码：
+
+   ```shell
+   #首先输入下面命令查看本地git仓库版本信息
+   git log
+   #然后输入以下代码来滚回指定版本
+   git reset --hard xxx	#xxx是本地仓库版本号
+   #详细如下图：
+   ```
+
+   ![image-20221109144736725](C:\Users\小白兔\AppData\Roaming\Typora\typora-user-images\image-20221109144736725.png)
+
