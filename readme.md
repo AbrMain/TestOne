@@ -79,6 +79,7 @@ TODO:今天暂不介绍安装过程
    ```
    git branch		#查看当前分支  主分支为master
    git branch dev 	#创建新分支 dev为
+   #新建分支修复bag
    ```
 
-   
+  
