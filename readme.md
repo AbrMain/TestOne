@@ -74,12 +74,29 @@ TODO:今天暂不介绍安装过程
 
    ![image-20221109150713305](C:\Users\小白兔\AppData\Roaming\Typora\typora-user-images\image-20221109150713305.png)
 
-10. git仓库分支概念：
+10. git仓库分支概念：（开发新功能分支是需要紧急修复bug解决方案）
 
-   ```
-   git branch		#查看当前分支  主分支为master
-   git branch dev 	#创建新分支 dev为
-   #新建分支修复bag
+   ```shell
+git branch		#查看当前分支  主分支为master
+git branch dev 	#创建新分支 dev为
+#新建分支修复bag
+git branch dev 	#创建新分支 dev为新分支名
+git checkout dev#切换当前分支到dev分支继续开发新功能
+#原版本出现bug要得回到原版本创建新分支修复bug
+git branch bug	#创建新分支
+git checkout bug#修复bug
+#修复完bug提交
+#然后回到原分支
+git checkout master
+#合并修复的bug分支
+git merge bug
+#合并完删除不必要的分支
+git branch -d bug#删除gug分支
+#合并完bug分支后继续开发新功能dev分支
+#开发完新功能后又回到主分支合并新功能
+git checkout master	#切换到主分支
+git merge dev	#合并到主分支
+#手都修改冲突部分后提交代码到仓库
    ```
 
   
