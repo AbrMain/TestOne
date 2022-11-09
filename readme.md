@@ -122,7 +122,18 @@ TODO:今天暂不介绍安装过程
     #老规矩是
     git push -u origin master
     #把dev分支也要上传
-git push -u origin dev
+    git push -u origin dev
     ```
 
-12. 
+12. 从github仓库中拉下来
+
+    ```shell
+    #下载到本地有两种方法
+    #第一种是本地还没有项目 就直接克隆
+    git clone https://github.com/AbrMain/TestOne.git
+    #第二种情况是 本地已经有旧项目 那就更新一下就可以
+    git remote add origin https://github.com/AbrMain/TestOne.git #给仓库取别名为origin
+    git pull origin dev	#(更新dev或者master分支)
+    ```
+
+    
