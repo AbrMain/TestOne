@@ -76,9 +76,10 @@ TODO:今天暂不介绍安装过程
 
 10. git仓库分支概念：
 
-   ```
+   ```shell
    git branch		#查看当前分支  主分支为master
-   git branch dev 	#创建新分支 dev为
+   git branch dev 	#创建新分支 dev为新分支名
+   git checkout dev#切换当前分支到dev分支
    ```
 
    
