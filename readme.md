@@ -61,3 +61,24 @@ TODO:今天暂不介绍安装过程
 
    ![image-20221109144736725](C:\Users\小白兔\AppData\Roaming\Typora\typora-user-images\image-20221109144736725.png)
 
+9. 滚回原来版本后发现又想新版本挺好 想挽回就输入下面代码：
+
+   ```shell
+   #首先我们用 git log命令找不到最新版怎么办
+   #就用以下命令查看版本切换记录
+   git reflog
+   #然后从中找出新版本输入滚回代码
+   git reset --hard xxx	#xxx是新版本仓库的版本号
+   #详细如下图：
+   ```
+
+   ![image-20221109150713305](C:\Users\小白兔\AppData\Roaming\Typora\typora-user-images\image-20221109150713305.png)
+
+10. git仓库分支概念：
+
+   ```
+   git branch		#查看当前分支  主分支为master
+   git branch dev 	#创建新分支 dev为
+   ```
+
+   
